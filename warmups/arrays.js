@@ -39,3 +39,35 @@ function foodAllergy (food){
     return "You can eat"
 
 }
+
+
+let cards = [2, 8, "k", 9, 10, 3, 4, "q", 7, "j", 5, 6, "a"]
+let faceCards = []
+let numberedCards = []
+
+while(cards.length>0){
+    let card = cards.pop()
+    if (isFaceCard(card)) {
+        faceCards.push(card)
+    } else {
+        numberedCards.push(card)
+    }
+}
+
+console.log(cards);
+console.log(faceCards);
+console.log(numberedCards);
+
+function isFaceCard(){
+    switch(card){
+        case "k":
+        case "q":
+        case "a":
+        case "j":
+            return true
+        default:
+            return false
+    }
+    return true
+    false
+}
