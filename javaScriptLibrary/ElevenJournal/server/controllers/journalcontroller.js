@@ -28,7 +28,6 @@ router.post("/create", validateJWT, async (req, res) => {
     } catch (err) {
         res.status(500).json({ error: err })
     }
-    JournalModel.create(journalEntry)
 
 })
 //get all journal entries
